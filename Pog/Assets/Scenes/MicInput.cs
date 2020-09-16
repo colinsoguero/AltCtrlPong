@@ -89,7 +89,7 @@ public class MicInput : MonoBehaviour{
         testSound2 = MicLoudness2;
         scaledPos1 = scale(0f, sensitivity1, -14.25f, 4.25f, testSound1);
         scaledPos2 = scale(0f, sensitivity2, -14.25f, 4.25f, testSound2);
-        Debug.Log(_devices[0] + ": " + scaledPos2);
+        //Debug.Log(_devices[0] + ": " + scaledPos2);
         //Debug.Log("Mic 2: " + scaledPos1);
     }
 

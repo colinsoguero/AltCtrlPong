@@ -36,12 +36,12 @@ public class Scoring : MonoBehaviour
         {
             if(isPlayer1Goal)
             {
-                Debug.Log("player 2 scored");
+                //Debug.Log("player 2 scored");
                 player2Score++;
             }
             else
             {
-                Debug.Log("player 1 scored");
+                //Debug.Log("player 1 scored");
                 player1Score++;
                 //Debug.Log(player1Score);
             }

@@ -7,6 +7,7 @@ public class Paddle : MonoBehaviour
     public bool isPaddle1;
     public GameObject mic;
     public MicInput micPos;
+    public AudioSource clip;
     public float speed = 5.0f;
     // Start is called before the first frame update
     void Start()
@@ -39,5 +40,13 @@ public class Paddle : MonoBehaviour
                 transform.position = new Vector3(10f, -4.25f, 0f);
         }
 
+    }
+
+    void OnCollisionEnter(Collision coll)
+    {
+        if(coll.gameObject.tag == "Ball")
+        {
+            clip.Play();
+        }
     }
 }
